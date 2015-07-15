@@ -9,14 +9,7 @@
 
 <section class="content">
 
-    <?php echo $idUsuario; ?>
-    <br><br><br>
-    <?php echo $perfil; ?>
-    <br>
-
-    <?php foreach ($meuPerfil as $key ) {
-    	echo $key . '<br>';
-    } ?>
+    MEUPERFIL
 
 </section><!-- /.content -->
 </div><!-- /.content-wrapper -->

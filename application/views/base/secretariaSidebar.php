@@ -10,9 +10,9 @@
               <img src="http://upload.wikimedia.org/wikipedia/commons/d/df/Jair_Bolsonaro.JPG" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-              <p>Alexander Pierce</p>
+              <p><?php echo $meuPerfil->nome; ?></p>
               <!-- Status -->
-              <a href="#"><i class="fa fa-circle text-success"></i> Professor</a>
+              <a href="#"><i class="fa fa-institution text-primary"></i> <?php echo $meuPerfil->funcao; ?></a>
             </div>
           </div>
 

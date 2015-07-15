@@ -143,33 +143,33 @@
                   <!-- The user image in the navbar-->
                   <img src="http://upload.wikimedia.org/wikipedia/commons/d/df/Jair_Bolsonaro.JPG" class="user-image" alt="User Image"/>
                   <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                  <span class="hidden-xs">NOMEAQUI</span>
+                  <span class="hidden-xs"><?php echo $meuPerfil->nome; ?></span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- The user image in the menu -->
                   <li class="user-header">
                     <img src="http://upload.wikimedia.org/wikipedia/commons/d/df/Jair_Bolsonaro.JPG" class="img-circle" alt="User Image" />
                     <p>
-                      NOME
-                      <small>FUNCAO</small>
+                      <?php echo $meuPerfil->nome .' '. $meuPerfil->sobrenome; ?>
+                      <small><?php echo $meuPerfil->codigo; ?></small>
                     </p>
                   </li>
                   <!-- Menu Body -->
                   <li class="user-body">
                     <div class="col-xs-4 text-center">
-                      <a href="#">Garagem</a>
+                      <a href="#">AAA</a>
                     </div>
                     <div class="col-xs-4 text-center">
-                      <a href="#">Autopeças</a>
+                      <a href="#">XXX</a>
                     </div>
                     <div class="col-xs-4 text-center">
-                      <a href="#">Amigos</a>
+                      <a href="#">BBB</a>
                     </div>
                   </li>
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="<?php echo base_url('admin/perfil');?>" class="btn btn-default btn-flat">Perfil</a>
+                      <a href="<?php echo base_url('secretaria/perfil');?>" class="btn btn-default btn-flat">Perfil</a>
                     </div>
                     <div class="pull-right">
                       <a href="login/logout_ci" class="btn btn-default btn-flat">Sair</a>

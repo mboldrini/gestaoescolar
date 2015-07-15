@@ -8,17 +8,17 @@ class FuncoesUsuario extends CI_Model {
 		parent::__construct();
 	}
 	
-	public function infosDoUsuario($id){
+	public function meuPerfil($id){
 
-		$this->db->where('idUsuario',$id);
-		$query = $this->db->get('meuPerfil');
+		$this->db->where('idUsers',$id);
+		$query = $this->db->get('meuperfil');
 
 		/* se APENAS um registro estiver o que quer, retorna ele, (o row não precisa de colocar no controller, só aqui pra facilitar)
 		*  e se der erro, retorna uma flashdata */
 		if($query->num_rows() == 1){
 			return $query->row();
 		}else{
-			$this->session->set_flashdata('perfilNaoExiste','O perfil desse usuário não existe!');
+			//$this->session->set_flashdata('perfilNaoExiste','O perfil desse usuário não existe!');
 			//redirect(base_url().'login','refresh');
 		}
 		
