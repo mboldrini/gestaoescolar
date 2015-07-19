@@ -27,7 +27,7 @@
       <header class="main-header">
 
         <!-- Logo -->
-        <a href="<?php echo base_url();?>admin" class="logo">
+        <a href="<?php echo base_url();?>" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>G</b>ES</span>
           <!-- logo for regular state and mobile devices -->
@@ -60,7 +60,7 @@
                         <a href="#">
                           <div class="pull-left">
                             <!-- User Image -->
-                            <img src="http://upload.wikimedia.org/wikipedia/commons/d/df/Jair_Bolsonaro.JPG" class="img-circle" alt="User Image"/>
+                            <img src="<?php echo base_url( 'assets/uploads/perfil/' . $meuPerfil->foto ); ?>" class="img-circle" alt="User Image"/>
                           </div>
                           <!-- Message title and timestamp -->
                           <h4>
@@ -141,14 +141,14 @@
                 <!-- Menu Toggle Button -->
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <!-- The user image in the navbar-->
-                  <img src="http://upload.wikimedia.org/wikipedia/commons/d/df/Jair_Bolsonaro.JPG" class="user-image" alt="User Image"/>
+                  <img src="<?php echo base_url( 'assets/uploads/perfil/' . $meuPerfil->foto ); ?>" class="user-image" alt="User Image"/>
                   <!-- hidden-xs hides the username on small devices so only the image appears. -->
                   <span class="hidden-xs"><?php echo $meuPerfil->nome; ?></span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- The user image in the menu -->
                   <li class="user-header">
-                    <img src="http://upload.wikimedia.org/wikipedia/commons/d/df/Jair_Bolsonaro.JPG" class="img-circle" alt="User Image" />
+                    <img src="<?php echo base_url( 'assets/uploads/perfil/' . $meuPerfil->foto ); ?>" class="img-circle" alt="User Image" />
                     <p>
                       <?php echo $meuPerfil->nome .' '. $meuPerfil->sobrenome; ?>
                       <small><?php echo $meuPerfil->codigo; ?></small>

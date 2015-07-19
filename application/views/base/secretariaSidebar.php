@@ -7,7 +7,7 @@
           <!-- Sidebar user panel (optional) -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="http://upload.wikimedia.org/wikipedia/commons/d/df/Jair_Bolsonaro.JPG" class="img-circle" alt="User Image" />
+              <img src="<?php echo base_url( 'assets/uploads/perfil/' . $meuPerfil->foto ); ?>" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
               <p><?php echo $meuPerfil->nome; ?></p>
