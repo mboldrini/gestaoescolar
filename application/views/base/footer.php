@@ -9,7 +9,7 @@
           Versão Atual: 0.0.0.0
         </div>
         <!-- Default to the left -->
-        <strong>Copyright &copy; 2015 <a href="#">Carros de Rua</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2015 - <?php echo date('Y'); ?> <a href="#">Gestão Escolar</a>.</strong> All rights reserved.
       </footer>
       
   
@@ -21,6 +21,7 @@
     <script src="<?php echo base_url();?>assets/js/bootstrap.min.js" type="text/javascript"></script>
     <!-- AdminLTE App -->
     <script src="<?php echo base_url();?>assets/js/app.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url();?>assets/js/efeitos.js" type="text/javascript"></script>
 
     <!-- ****************************************************
     *
