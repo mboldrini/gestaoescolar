@@ -52,7 +52,7 @@
                   <span class="label label-success">4</span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li class="header">You have 4 messages</li>
+                  <li class="header">Você tem 4 mensagens</li>
                   <li>
                     <!-- inner menu: contains the messages -->
                     <ul class="menu">
@@ -73,7 +73,7 @@
                       </li><!-- end message -->
                     </ul><!-- /.menu -->
                   </li>
-                  <li class="footer"><a href="#">See All Messages</a></li>
+                  <li class="footer"><a href="<?php echo base_url('secretaria/mensagens/'); ?>">Ver todas as mensagens</a></li>
                 </ul>
               </li><!-- /.messages-menu -->
 

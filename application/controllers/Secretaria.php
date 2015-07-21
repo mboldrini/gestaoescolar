@@ -64,6 +64,30 @@ class Secretaria extends CI_Controller {
 
 	}
 
+	public function mensagens(){
+
+		if($this->session->userdata('perfil') == FALSE || $this->session->userdata('perfil') != 'secretaria'){
+			redirect(base_url().'login');
+		}
+
+		/* pega o Id_usuario que veio da sessio e joga pra variavel id */
+		$id = $this->session->userdata('id_usuario');
+		$perfil = $this->session->userdata('perfil');
+
+		$data = array(
+			'titulo' => 'Minhas mensagens - Gestão Escolar',
+			'ondeEsta' => 'Minhas mensagens',
+			'descricao' => 'aqui você vê todas as suas mensagens!',
+			'tela' => 'mensagens',
+			'idUsuario' => $id,
+			'perfil' => $perfil,
+			'meuPerfil' => $this->FuncoesUsuario->meuPerfil($id)
+		);
+
+		$this->load->view('secretaria',$data);
+
+	}
+
 
 
 
